@@ -20,14 +20,14 @@ h1,h2,h3,h4 {
 }
 .customNumber-ol {
     padding-left: 0;
-    list-style: none; /* Remove default list styling */
-    counter-reset: list-item; /* Initialize a counter */
+    list-style: none;
+    counter-reset: list-item;
   }
 .customNumber-ol li {
-    counter-increment: list-item; /* Increment the counter for each item */
+    counter-increment: list-item;
 }
 .customNumber-ol li::before {
-    content:counter(list-item)') '; /* Display the counter value followed by a closing parenthesis */
+    content:counter(list-item)') ';
 }
 .customLetter-ol {
     padding-left: 0;
