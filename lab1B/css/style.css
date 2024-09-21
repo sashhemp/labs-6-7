@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+table{
+    width: 100%;
+    background-color: rgb(36, 83, 82);
+    text-shadow: 3px 2px 5px rgb(253, 246, 107);
+}
+td {
+    width: 50%;
+    vertical-align: top;
+}
+/*наложение картинок*/
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-container img {
+    width: 50%;
+}
+.image-container img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(+70%, +60%); /*на 70% от своего размера вправо и 60% вниз*/
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    transform: translate(+70%, +59%);
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.373);
+    color: aliceblue;
+}
+.table-on-pic{
+    border-collapse: collapse;
+    background-color: transparent;
+    font-family: raleway;
+}
+.table-on-pic th, .table-on-pic td {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+/*2 столбец с текстом*/
+.lyrics-background {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-origin: content-box; /*фон будет обрезан до контентной области элемента и не будет распространяться на области отступов или границ*/
+    background-image: url("../resource/b1864874af33b86f444ecb24d8fc485a.jpg");
+    background-size: cover;
+    opacity: 0.4;
+
+    column-count: 4;
+    column-gap: 20px;
+    column-width: 80px;
+    /*word-break: break-all;*/
+    hyphens: auto;
+}
+.first-paragragh{
+    color: aquamarine;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.second-paragragh{
+    color: azure;
+    font-size: 22px;
+    font-family: railway;
+    font-style: italic;
+}
+.third-paragragh{
+    color: #9fd8fc;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+/*анимация*/
+.object {
+    position: absolute;
+    top: 3%;
+    width: 20px;
+    height: 20px;
+    animation: move 3s infinite;
+}
+@keyframes move {
+    0% {
+        left: 0;
+        background-color: rgb(130, 207, 255);
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    33% {
+        left: 50%;
+        background-color: rgb(248, 248, 147);
+        opacity: 0.5;
+        transform: rotate(120deg);
+    }
+    66% {
+      left: 100%;
+      background-color: rgb(0, 255, 132);
+      opacity: 0.2;
+      transform: rotate(240deg);
+    }
+    100% {
+      left: 0;
+      background-color: rgb(48, 182, 197);
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+}
+/*для всех четных вариантов*/
+.yellow {
+    color: yellow;
+}
+.green {
+    color: greenyellow;
+}
+.blue {
+    color: blue;
+    font-weight: bold;
+}
+.violet {
+    color: violet;
+    font-size: 21px;
+}

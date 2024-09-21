@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+table {
+    width: 100%;
+    background-color: #0c062b;
+    color: #f7efef;
+    font-size: 18px;
+    padding: 15px;
+    font-family: saira;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #174b46;
+    width: 33%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+h1,h2,h3,h4 {
+    color: rgb(166, 166, 196);
+}
+.customNumber-ol {
+    padding-left: 0;
+    list-style: none; /* Remove default list styling */
+    counter-reset: list-item; /* Initialize a counter */
+  }
+.customNumber-ol li {
+    counter-increment: list-item; /* Increment the counter for each item */
+}
+.customNumber-ol li::before {
+    content:counter(list-item)') '; /* Display the counter value followed by a closing parenthesis */
+}
+.customLetter-ol {
+    padding-left: 0;
+    list-style-type: none;
+    counter-reset: item;
+  }
+.customLetter-ol li {
+    counter-increment: item;
+  }
+.customLetter-ol li:before {
+    content: counter(item, lower-alpha) ") ";
+  }
+.inner-ol{
+    padding-left: 20px;
+}
+.inner-ol > li{
+    font-style: italic;
+    font-weight: bold;
+}
+.roman-ol > li{
+    font-weight: bold;
+}
