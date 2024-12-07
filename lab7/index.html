@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <button class="open-modal" data-modal="1">Open Modal 1</button>
+        <button class="open-modal" data-modal="2">Open Modal 2</button>
+        <button class="open-modal" data-modal="3">Open Modal 3</button>
+
+        <div id="modal1" class="modal">
+            <span class="close">×</span>
+            <p>
+                <img src="https://pbs.twimg.com/media/GeGr1RlbsAAUln0?format=jpg&name=large" alt="">
+            </p>
+        </div>
+        <div id="modal2" class="modal">
+            <span class="close">×</span>
+            <p>
+                <img src="https://pbs.twimg.com/media/GeMPtKQa0AAYgQi?format=jpg&name=large" alt="">
+            </p>
+        </div>
+        <div id="modal3" class="modal">
+            <span class="close">×</span>
+            <p>
+                <img src="https://pbs.twimg.com/media/GdSZCd_aoAEzWBO?format=jpg&name=large" alt="">
+            </p>
+        </div>
+
+        <div class="backdrop"></div>
+
+        <div>
+            <h3>Modals' parameters</h3>
+            <select id="modal-size">
+                <option value="200x200">200x200</option>
+                <option value="300x300">300x300</option>
+                <option value="400x400">400x400</option>
+                <option value="500x500">500x500</option>
+                <option value="600x600">600x600</option>
+            </select>
+            <select id="modal-coords">
+                <option value="0x0">0, 0</option>
+                <option value="50x50">50, 50</option>
+                <option value="100x100">100, 100</option>
+                <option value="200x200">200, 200</option>
+                <option value="300x300">300, 300</option>
+            </select>
+            <button id="apply-settings">Apply</button>
+        </div>
+        <script src="script.js"></script>
+    </body> 
+</html>
